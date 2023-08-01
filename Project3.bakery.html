@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+
+    <style>
+
+        *{
+        margin: 0; 
+        padding: 0;
+        }
+
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           
+            background-color: #f5f5f5;
+        }
+
+        .backgroundImage{
+        height: 100vh;
+        width: 100%;
+        background-image:linear-gradient(rgba(63, 62, 62, 0.43),rgba(63, 62, 62, 0.436) ),url(project3/cover.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: 60%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        }
+
+        .coverText{
+        width: fit-content;     
+        font-size: 30px;     
+        color: black;     
+        text-align: center;   
+        padding-top: 240px;   
+        margin: auto;
+        }
+
+        .h1Covera{
+            color: rgb(212, 50, 207);
+            margin-bottom: 0;
+            font-size: 40px;
+        }
+
+        .h1Cover{
+            color: white;
+            margin-top: 0;
+            font-size: 60px;
+            padding-top: 10px;
+        }
+        .navbarSection{
+         background-color: rgb(1, 1, 68)
+        }
+
+
+        .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(1, 1, 68);
+        padding: 10px 60px;
+        width: 60%;
+        margin-left: auto;
+        }
+
+        .navbarMenu a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        padding: 14px 16px;
+
+          }
+
+        .navbarIcons a {
+            margin-left: 10px;
+        }
+
+
+        .secondSection{
+        height: 50vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: #f5f5f5;
+        }
+
+        .iconContainer{
+        color: orangered;
+        font-size: 30px; 
+        align-items: center;
+        margin: 40px 10px;
+        text-align: center;
+        }
+
+        .iconContainer i {
+        border: 2px orangered solid;
+        border-radius: 50%;
+        padding: 20px;
+        }
+
+        .iconContainer h1,
+        .iconContainer p {
+            margin: 0;
+        }
+
+       .iconSection{
+        display: flex;
+        align-items: center;
+       }
+
+       .thirdSection{
+        height: auto;
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(to right, #38a9b8, #fd4ed4);
+        }
+
+        .titleContainer{
+        height: auto;
+        text-align: center;
+        font-size: 25px;
+        }
+
+        .titleColour1{
+            color: black;
+        }
+
+        .titleColour2{
+            color: white;
+        }
+
+        .titleContainer1{
+        height: auto;
+        text-align: center;
+        font-size: 15px;
+        background-color: orangered;
+        }
+
+        .titleColour11{
+            color: black;
+        }
+
+        .titleColour22{
+            color: white;
+        }
+
+        .cakesContainer{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin: 20px;
+        }
+
+        .cakes{
+            height: auto;
+            width: 300px;
+            text-align: center;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+        }
+
+        .btn{
+            background-color: orangered;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 20px;
+        }
+
+        .imagesCakes{
+            height: 250px; 
+            width: 250px; 
+            border-radius: 20px;
+            padding: 10px;
+        }
+
+
+        .titleContainer2{
+        height: auto;
+        text-align: center;
+        font-size: 15px;
+        background-color:  rgba(1, 1, 68);
+        }
+
+        .titleColour11{
+            color: white;
+        }
+
+        .titleColour22{
+            color: white;
+        }
+
+        .fourthSection{
+        height: auto;
+        width: 100%;
+        }
+
+        .fa-user{
+            font-size: 40px;
+            color: orangered;
+        }
+
+        .quotes{
+        border: 2px solid orangered;
+        padding: 20px;
+        width: 40%;
+        margin: 10px;
+        border-radius: 10px;
+        }
+
+        .quotesContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: stretch;
+        text-align: center;
+        background-color: #f5f5f5;
+        }
+
+        .footerMain{
+            background-color:rgb(1, 1, 68) ;
+        }
+
+        .footerSection{
+        width: 70%;
+        height: 350px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        background-color:rgb(1, 1, 68) ;
+        }
+
+        .footer{
+        width: 20%;
+        height: 150px;
+        color: white;
+        text-align: left;
+        font-size: 10px;
+        }
+
+        .footer p{
+        line-height: 20px;
+        }
+
+
+        .footerHeader{
+            text-decoration: underline orangered;
+        }
+
+        span{
+            font-weight: bold;
+            color: orangered;
+        }
+       
+        .titleContainer1 p{
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="backgroundImage">
+
+        <div class="navbarSection">
+
+        <div class="navbar">
+                <div class="navbarMenu">
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Contact</a>
+                </div>    
+                <div class="navbarIcons">
+                    <a href="#"><i class="fas fa-search fa-lg" style="color:white;"></i></a>
+                    <a href="#"><i class="fas fa-shopping-basket fa-lg" style="color:white;"></i></a>
+                </div>
+        </div> 
+        </div>
+
+            <div class="coverText">
+                <h1 class="h1Covera">Satisfying Your Sweet Tooth</h1>
+                <h1 class="h1Cover">Sweet Slice</h1>
+            </div>
+
+    </div>
+
+
+    <div class="titleContainer1">
+        <h1> <span class="titleColour11" >Our</span> <span class="titleColour22">Promises</span> </h1>
+    </div>
+
+    <div class="secondSection">
+
+        <div class="iconSection">
+            <div class="iconContainer">
+                <i class="fas fa-truck"></i>
+            </div>
+            <div> 
+                <h2>Free shipping</h2>
+                <p>When order over $75</p>
+            </div> 
+        </div>
+
+        <div class="iconSection">
+            <div class="iconContainer">
+                <i class="fas fa-headphones"></i>
+            </div>
+        <div>
+            <h2>24/7 Support</h2>
+            <p>Get Support All Day</p>
+        </div>
+        </div>
+
+        <div class="iconSection">
+            <div class="iconContainer">
+                <i class="fas fa-undo-alt"></i>
+            </div>
+        <div>
+            <h2>Refund</h2>
+            <p>Money Back Promise!</p>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="titleContainer1">
+        <h1> <span class="titleColour11" >Our</span> <span class="titleColour22">Products</span> </h1>
+    </div>
+
+    <div class="thirdSection">
+
+        <div class="titleContainer">
+            <br> <br>
+                <h1> <span class="titleColour1" >Smash</span> <span class="titleColour2">Cakes</span> </h1>
+        </div>
+
+        <div class="cakesContainer">
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm1.jpeg">
+                <p>Marble Effect Smash</p>
+                <h2>£30</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm2.jpeg">
+                <p>Teddy Bear Smash</p>
+                <h2>£45</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm3.jpeg">
+                <p>Lemon Car Smash</p>
+                <h2>£20</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="thirdSection">
+
+        <div class="titleContainer">
+            <br> <br>
+                <h1> <span class="titleColour1" >Spong</span> <span class="titleColour2">Cakes</span> </h1>
+        </div>
+
+        <div class="cakesContainer">
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp1.jpeg">
+                <p>Rainbow Spong Cake</p>
+                <h2>£30</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp2.jpeg">
+                <p>Rose Spong Cake</p>
+                <h2>£45</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+            <div class="cakes">
+                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp3.jpeg">
+                <p>Teal Spong Cake</p>
+                <h2>£20</h2>
+                <button class="btn">Order now</button>
+            </div>
+
+        </div>
+        <br> <br>
+    </div>
+
+    <div class="titleContainer2">
+        <h1> <span class="titleColour11" >Our</span> <span class="titleColour22">Customers</span> </h1>
+    </div>
+    <br> <br>
+<div class="fourthSection">
+
+    <div class="quotesContainer">
+
+        <div class="quotes">
+            <i class="fas fa-user"></i>
+            <br> <br>
+            <h1>James Keith</h1>
+            <br>
+            <h4>Local Shop Keeper</h4>
+            <br>
+            <p>"I recently discovered this amazing online cake store, and I'm absolutely thrilled with my experience. The cakes were not only visually stunning but also incredibly delicious. The customer service was top-notch, helping me find the perfect cake for my occasion. I highly recommend this online store for anyone looking for heavenly treats delivered right to their doorstep."</p>
+        </div>
+
+        <div class="quotes">
+            <i class="fas fa-user"></i>
+            <br> <br>
+            <h1>Lisa Huth</h1>
+            <br>
+            <h4>Teacher</h4>
+            <br>
+            <p>"I have ordered multiple cakes from this online store, and they never disappoint. The variety of flavors and designs they offer is impressive. Whether it's a classic chocolate cake or a unique flavor combination, they always deliver excellence. The cakes are always fresh, moist, and beautifully decorated. Their customer service is exceptional, ensuring a smooth and hassle-free experience every time. I'm a loyal customer, and I can't recommend this online cake store enough."</p>
+        </div>
+    </div>
+
+    <div class="quotesContainer"> 
+
+        <div class="quotes">
+            <i class="fas fa-user"></i>
+            <br> <br>
+            <h1>Aisha Ali</h1>
+            <br>
+            <h4>Lawyer</h4>
+            <br>
+            <p>"This online cake store is a hidden gem! I needed a last-minute cake for a small celebration, and they came to my rescue. Despite the short notice, they accommodated my request and delivered a gorgeous cake right on time. The taste was phenomenal, and it exceeded my expectations. Their attention to detail in both presentation and flavor is remarkable. I'm so glad I found this online store, and I will definitely be ordering from them again. Trust me, you won't be disappointed!"</p>
+        </div>
+
+        <div class="quotes">
+            <i class="fas fa-user"></i>
+            <br> <br>
+            <h1>Chi Hang</h1>
+            <br>
+            <h4>Accountant</h4>
+            <br>
+            <p>"I stumbled upon this online cake store while searching for a special dessert for my friend's birthday. The entire process, from browsing their website to placing the order, was seamless. The cake arrived perfectly packaged and looked absolutely stunning. And the taste? Oh my goodness! It was pure bliss. Moist, flavorful, and simply divine. I received so many compliments from the party guests. I can't wait to order from this online store again. Highly recommended!"</p>
+        </div>
+    </div>
+    </div>
+
+    <br> <br>
+
+    <div class="footerMain">
+
+    <div class="footerSection">
+        <div class="footer">
+            <h1 class="footerHeader">About Us</h1>
+            <br>
+            <p>Welcome to Sweet Slice, your destination for delectable cakes and treats! With 10 years of cake-making experience, our skilled bakers craft mouthwatering creations using the finest ingredients at our London location. From birthdays to weddings, savor the magic of Sweet Delights and make your celebrations unforgettable. Indulge today!</p>
+        </div>
+
+        <div class="footer">
+            <h1 class="footerHeader">Get in Touch</h1>
+            <br>
+            <p><span>></span>  info@sweetdelights.co.uk</p>
+            <p><span>></span>  45 Baker Street, London W1U 8EW, United Kingdom</p>
+            <p><span>></span>  +44 20 1234 5676 </p>
+        </div>
+
+        <div class="footer">
+            <h1 class="footerHeader">Pages</h1>
+            <br>
+            <P> <span>></span> Home</P>
+            <P><span>></span> About </P>
+            <P><span>></span>  Shop </P>
+            <p><span>></span>  Contact Us</p>
+        </div>
+
+        <div class="footer">
+            <h1 class="footerHeader">Subscribe</h1>
+            <br>
+            <p><span>></span> Subscribe to our mailing list to get the latest updates.</p>
+        </div>
+    </div>
+</div>
+
+    <div class="titleContainer1">
+        <p>Copyrights 2023  - Abdul Sufi, All Rights Reserved</p>
+    </div>
+
+
+</body>
+</html>
