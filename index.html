@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-
+    <script src="https://kit.fontawesome.com/ed8577bc33.js" crossorigin="anonymous"></script>
 
 
     <style>
@@ -24,7 +24,7 @@
         .backgroundImage{
         height: 100vh;
         width: 100%;
-        background-image:linear-gradient(rgba(63, 62, 62, 0.43),rgba(63, 62, 62, 0.436) ),url(project3/cover.jpg);
+        background-image:linear-gradient(rgba(63, 62, 62, 0.43),rgba(63, 62, 62, 0.436) ),url(Project3/cover.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: 60%;
@@ -55,7 +55,10 @@
             padding-top: 10px;
         }
         .navbarSection{
-         background-color: rgb(1, 1, 68)
+         height: 19vh;
+         display: flex;
+         justify-content: space-around;
+         align-items: center;
         }
 
 
@@ -70,16 +73,19 @@
         margin-left: auto;
         }
 
-        .navbarMenu a {
+        .navbar-container a {
         text-decoration: none;
         color: white;
         font-size: 20px;
         padding: 14px 16px;
+        }
 
-          }
+        .navbar-cart a {
+            margin-left: 30px;
+        }
 
-        .navbarIcons a {
-            margin-left: 10px;
+        .navbar-icon img{
+            border-radius: 100%;
         }
 
 
@@ -123,7 +129,7 @@
         justify-content:space-evenly;
         flex-direction: column;
         align-items: center;
-        background: linear-gradient(to right, #38a9b8, #fd4ed4);
+        ;
         }
 
         .titleContainer{
@@ -137,14 +143,15 @@
         }
 
         .titleColour2{
-            color: white;
+            color: orangered;
         }
 
         .titleContainer1{
-        height: auto;
+        height: 5vh;
+        padding: 5px;
         text-align: center;
         font-size: 15px;
-        background-color: orangered;
+        background-color: rgba(1, 1, 68);
         }
 
         .titleColour11{
@@ -172,6 +179,7 @@
             background-color: white;
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
             border-radius: 20px;
+            border: solid 5px black;
         }
 
         .btn{
@@ -190,10 +198,11 @@
 
 
         .titleContainer2{
-        height: auto;
+        height: 5vh;
+        padding: 5px;
         text-align: center;
         font-size: 15px;
-        background-color:  rgba(1, 1, 68);
+        background-color: rgba(1, 1, 68);
         }
 
         .titleColour11{
@@ -272,6 +281,12 @@
             color: white;
         }
 
+        .footertitleContainer{
+            background-color: orangered;
+            text-align: center;
+            height: auto;
+            font-size: 15px;
+        }
 
     </style>
 </head>
@@ -280,26 +295,25 @@
     <div class="backgroundImage">
 
         <div class="navbarSection">
-
-        <div class="navbar">
-                <div class="navbarMenu">
-                    <a href="#">Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Menu</a>
-                    <a href="#">Contact</a>
-                </div>    
-                <div class="navbarIcons">
-                    <a href="#"><i class="fas fa-search fa-lg" style="color:white;"></i></a>
-                    <a href="#"><i class="fas fa-shopping-basket fa-lg" style="color:white;"></i></a>
-                </div>
-        </div> 
+            <div class="navbar-icon">
+                <img src="Project3/logo.jpeg" width="100"/>
+            </div>
+            <div class="navbar-container">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Menu</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="navbar-cart">
+                <a href="#"><i class="fas fa-search fa-lg" style="color:white;"></i></a>
+                <a href="#"><i class="fas fa-shopping-basket fa-lg" style="color:white;"></i></a>
+            </div>
         </div>
 
             <div class="coverText">
                 <h1 class="h1Covera">Satisfying Your Sweet Tooth</h1>
                 <h1 class="h1Cover">Sweet Slice</h1>
             </div>
-
     </div>
 
 
@@ -355,21 +369,21 @@
         <div class="cakesContainer">
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm1.jpeg">
+                <img  class="imagesCakes"     src="Project3\sm1.jpeg">
                 <p>Marble Effect Smash</p>
                 <h2>£30</h2>
                 <button class="btn">Order now</button>
             </div>
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm2.jpeg">
+                <img  class="imagesCakes"     src="Project3\sm2.jpeg">
                 <p>Teddy Bear Smash</p>
                 <h2>£45</h2>
                 <button class="btn">Order now</button>
             </div>
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sm3.jpeg">
+                <img  class="imagesCakes"     src="Project3\sm3.jpeg">
                 <p>Lemon Car Smash</p>
                 <h2>£20</h2>
                 <button class="btn">Order now</button>
@@ -388,21 +402,21 @@
         <div class="cakesContainer">
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp1.jpeg">
+                <img  class="imagesCakes"     src="Project3\sp1.jpeg">
                 <p>Rainbow Spong Cake</p>
                 <h2>£30</h2>
                 <button class="btn">Order now</button>
             </div>
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp2.jpeg">
+                <img  class="imagesCakes"     src="Project3\sp2.jpeg">
                 <p>Rose Spong Cake</p>
                 <h2>£45</h2>
                 <button class="btn">Order now</button>
             </div>
 
             <div class="cakes">
-                <img  class="imagesCakes"     src="C:\Users\asufi\Coding\Project3\sp3.jpeg">
+                <img  class="imagesCakes"     src="Project3\sp3.jpeg">
                 <p>Teal Spong Cake</p>
                 <h2>£20</h2>
                 <button class="btn">Order now</button>
@@ -501,7 +515,7 @@
     </div>
 </div>
 
-    <div class="titleContainer1">
+    <div class="footertitleContainer">
         <p>Copyrights 2023  - Abdul Sufi, All Rights Reserved</p>
     </div>
 
